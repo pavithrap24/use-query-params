@@ -33,7 +33,9 @@ export function useQueryParam(queryParam) {
       }
     }
   });
-  return returnValue;
+  return returnValue
+    ? returnValue
+    : console.error("Query Param is not prsent.");
 }
 
 export default useQueryParams;
