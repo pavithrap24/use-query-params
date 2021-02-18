@@ -1,11 +1,16 @@
 {
   "name": "use-params-query",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React hook to get the all query params from the url or to get he value of a particular key.",
   "main": "useQueryParams.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+  "keywords": [
+    "react",
+    "react-hook",
+    "query param"
+  ],
   "license": "ISC"
 }
