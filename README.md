@@ -20,3 +20,18 @@ const params = useQueryParams();
 const param = useQueryParam("name");
  
  ```
+
+## Example:
+
+```
+for the below url the results will be as follows.
+
+http://localhost:3000?name=Sam&age=20
+
+const params = useQueryParams();
+the result will be:  [{name: 'Sam'}, {age: 20}]
+
+const param = useQueryParam("name");
+the result will be:  Sam
+
+```
