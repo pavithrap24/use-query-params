@@ -1,5 +1,5 @@
 import "./App.css";
-import useQueryParams, { useQueryParam } from "./useQueryParams";
+import useQueryParams, { useQueryParam } from "use-params-query/useQueryParams";
 
 function App() {
   const results = useQueryParams();
