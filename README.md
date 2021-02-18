@@ -6,7 +6,7 @@ React hook to get the all query params from the url or to get he value of a part
 
 ```
 
-npm i use-query-params -s
+npm i use-params-query -s
 
 ```
 
@@ -14,7 +14,7 @@ npm i use-query-params -s
 
 ```
 
-import useQueryParams, { useQueryParam } from "./useQueryParams";
+import useQueryParams, { useQueryParam } from "use-params-query";
 
 const params = useQueryParams();
 const param = useQueryParam("name");
