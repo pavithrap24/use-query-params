@@ -14,6 +14,8 @@ npm i use-params-query -s
 
 ```
 
+import useQueryParams, { useQueryParam } from "use-params-query";
+
 const params = useQueryParams();
 const param = useQueryParam("name");
 
