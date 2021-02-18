@@ -1,5 +1,3 @@
-import React from "react";
-
 function useQueryParams() {
   const oldUrl = window.location.search;
   let url = oldUrl.substr(1);
