@@ -1,6 +1,6 @@
-# USE-QUERY-PARAMS
+# USE-PARAMS-QUERY
 
-React hook to get the all query params from the url or to get he value of a particular key.
+React hook to get the all query params from the url or to get the value of a particular key.
 
 ## Installation:
 

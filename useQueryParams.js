@@ -1,22 +1,16 @@
 function useQueryParams() {
   const oldUrl = window.location.search;
-  let url = oldUrl.substr(1);
+  const url = oldUrl.substr(1);
 
   let params = [];
 
-  while (url.length > 0 && url.indexOf("=") != -1) {
-    const keyLastIndex = url.indexOf("=");
-    const key = url.substring(0, keyLastIndex);
-    let value;
-    const andIndex = url.indexOf("&");
-    if (andIndex != -1) {
-      value = url.substring(keyLastIndex + 1, andIndex);
-      url = url.substring(andIndex + 1);
-    } else {
-      value = url.substring(keyLastIndex + 1);
-      url = "";
+  const keyValueParams = url.split("&");
+  for (var index in keyValueParams) {
+    let key = keyValueParams[index].split("=")[0];
+    let value = keyValueParams[index].split("=")[1];
+    if (keyValueParams[index] !== "") {
+      params.push({ [key]: value });
     }
-    params.push({ [key]: value });
   }
   return params;
 }
